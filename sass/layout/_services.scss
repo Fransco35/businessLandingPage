@@ -1,0 +1,184 @@
+.services {
+  padding: 8rem;
+
+  @media only screen and (max-width: $bp-tablet) {
+    padding: 5rem 5rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile_L) {
+    text-align: center;
+  }
+
+  &-content {
+    margin: 5rem auto;
+
+    &__box {
+      display: flex;
+      padding: 3.5rem 2.5rem;
+      margin: 20rem 0;
+
+      @media only screen and (max-width: $bp-tablet) {
+      margin: 10rem 0;
+      }
+
+      @media only screen and (max-width: $bp-mobile_L) {
+       flex-direction: column-reverse;
+       margin: 0 auto;
+        }
+
+      &_2,
+      &_4 {
+        flex-direction: row-reverse;
+
+        @media only screen and (max-width: $bp-mobile_L) {
+          flex-direction: column-reverse;
+           }
+      }
+    }
+
+    &_h1 {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        font-size: 7rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+        font-size: 4.7rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop) {
+        font-size: 3.7rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        font-size: 2.6rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_S) {
+        font-size: 2.2rem;
+      }
+    }
+
+    &_h3 {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        font-size: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+        font-size: 2.6rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_S) {
+        font-size: 1.25rem;
+      }
+    }
+
+    &_text {
+      width: 45vw;
+      margin: 0 2rem;
+      padding: 2rem;
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        margin: auto;
+        width: 70vw;
+         }
+
+       @media only screen and (max-width: $bp-mobile_M) {
+          margin: auto;
+          width: 65vw;
+        }
+
+       @media only screen and (max-width: $bp-mobile_S) {
+          margin: auto;
+          width: 60vw;
+        }
+    }
+
+    &_iconbox {
+      display: flex;
+      width: 40vw;
+      justify-content: center;
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        justify-content: center;
+        margin: 0 auto;
+         }
+
+        @media only screen and (max-width: $bp-mobile_M) {
+          justify-content: center;
+          margin: 0 auto;
+          }
+
+         @media only screen and (max-width: $bp-mobile_S) {
+            justify-content: center;
+            margin: 0 auto;
+         }
+    }
+
+    &__icon {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        width: 60rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+        width: 50rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop) {
+        width: 45rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        width: 30rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_S) {
+        width: 25rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &-paymentInfo {
+    text-align: center;
+
+    &_text {
+      @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: x-large;
+      }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+      font-size: medium;
+        }
+
+    }
+
+    &_iconbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1.5rem;
+      padding: 0.5rem 0;
+
+
+      &_icon:not(:last-child) {
+        margin-right: 3rem;
+
+        @media only screen and (max-width: $bp-mobile_M) {
+          margin-right: 1.8rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile_S) {
+          margin-right: 1.2rem;
+        }
+      }
+    }
+  }
+}

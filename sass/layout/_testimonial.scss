@@ -1,0 +1,153 @@
+.testimonial {
+  padding: 8rem 4rem;
+  position: relative;
+
+  @media only screen and (max-width: $bp-mobile_M) {
+  padding: 6rem 0.5rem;
+    }
+
+  @media only screen and (max-width: $bp-mobile_S) {
+    padding: 5.5rem 0;
+     }
+
+    
+
+  &-header {
+    margin-bottom: 6rem;
+
+    @media only screen and (max-width: $bp-mobile_L) {
+     text-align: center;
+     margin-bottom: 3rem;
+     }
+
+  }
+
+  &-box {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 50px;
+    padding: 4rem;
+
+    @media only screen and (max-width: $bp-tablet) {
+    gap: 25px;
+    }
+
+    @media only screen and (max-width: $bp-mobile_L) {
+      grid-template-rows: none;
+      grid-template-columns: none;
+      gap: none;
+      }
+
+     @media only screen and (max-width: $bp-mobile_S) {
+        padding: 2rem;
+       }
+
+    &_content {
+      padding: 2rem;
+
+      @media only screen and (max-width: $bp-tablet) {
+        padding: 0;
+        }
+
+     @media only screen and (max-width: $bp-mobile_L) {
+          margin-top: 2rem;
+       }
+
+      &_head {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        @media only screen and (max-width: $bp-mobile_S) {
+        padding: 0;
+        }
+
+        &_image {
+          width: 12rem;
+          height: 12rem;
+          position: relative;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+          overflow: hidden;
+          shape-outside: margin-box;
+        }
+      }
+    }
+
+  }
+
+  &_h1{
+    @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop_L) {
+      font-size: 4.7rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile_L) {
+      font-size: 4.4rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile_M) {
+      font-size: 4.2rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile_S) {
+      font-size: 4rem;
+    }
+  }
+
+  &_h2{
+    @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 5rem;
+    }
+
+     @media only screen and (max-width: $bp-laptop_L) {
+        font-size: 2.6rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_S) {
+        font-size: 1.7rem;
+      }
+  }
+
+  &_h3{
+    @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 3.2rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop_L) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile_S) {
+      font-size: 1.3rem;
+      }
+  }
+
+  &_p{
+    @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop_L) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 1.2rem;
+    }
+  }
+
+
+}

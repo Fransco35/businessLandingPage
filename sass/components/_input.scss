@@ -1,0 +1,86 @@
+.formbox {
+
+  @media only screen and (max-width: $bp-laptop_XL) {
+  width: 70rem;
+    }
+
+  @media only screen and (max-width: $bp-laptop_L) {
+   width: 50rem;
+   }
+
+   @media only screen and (max-width: $bp-mobile_L) {
+    width: 25rem;
+    }
+
+
+  margin: 0 auto;
+}
+
+.form_input {
+  display: flex;
+  align-items: center;
+}
+
+.input_field {
+
+  @media only screen and (max-width: $bp-laptop_XL) {
+    height: 6.5rem;
+    border: 2px solid #000;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-laptop_L) {
+    height: 5rem;
+    border: 1px solid #000;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+  }
+
+  display: inline-block;
+  background-color: transparent;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+  margin-right: 0;
+}
+
+.input_field:focus {
+  outline: none;
+  border: 1px solid #2998ff;
+}
+
+.input_field::placeholder {
+  @media screen and (max-width: $bp-laptop_XL) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: $bp-laptop_L) {
+    font-size: 2rem;
+  }
+}
+
+.input_btn {
+  @media screen and (max-width: $bp-laptop_XL) {
+    height: 6.5rem;
+    border: 0 solid #000;
+
+  }
+
+  @media screen and (max-width: $bp-laptop_L) {
+    height: 5rem;
+    border: 1px solid #000;
+
+  }
+
+  width: 7rem;
+  border-radius: 0;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-image: url(../img/input-icon.svg);
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+.input_btn:hover {
+  cursor: pointer;
+}

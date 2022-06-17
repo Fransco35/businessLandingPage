@@ -1,0 +1,206 @@
+.blog {
+  padding: 6rem 4rem;
+
+  @media only screen and (max-width: $bp-laptop) {
+    padding: 4rem 2rem;
+     }
+
+  &-header {
+    margin: 2rem 0 6rem;
+    text-align: center;
+
+    &_h1 {
+      @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 7rem;
+       }
+
+       @media only screen and (max-width: $bp-laptop_L) {
+        font-size: 4.7rem;
+         }
+
+       @media only screen and (max-width: $bp-laptop) {
+          font-size: 3rem;
+        }
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    padding: 10rem;
+
+    @media only screen and (max-width: $bp-tablet) {
+    padding: 6rem;
+
+     }
+
+     @media only screen and (max-width: $bp-mobile_L) {
+     grid-template-columns: none;
+     }
+
+    & > * {
+      margin-right: 3rem;
+      animation: moveUp 7s infinite;
+      box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+    }
+
+    &_1,
+    &_2,
+    &_3 {
+
+      @media only screen and (max-width: $bp-laptop_XL) {
+       height: 110rem;
+      }
+
+      
+      @media only screen and (max-width: $bp-laptop_L) {
+       height: 45rem;
+        }
+
+       @media only screen and (max-width: $bp-laptop) {
+         height: 40rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile_L) {  
+          margin: 0 auto;
+          margin-bottom: 2rem;
+         }
+
+      background-color: $primary-background-color;
+      border-bottom-left-radius: $blog-component-radius;
+      border-bottom-right-radius: $blog-component-radius;
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &_1,
+    &_3 {
+      border-top-left-radius:  $blog-component-radius;
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        border-top-left-radius: 0;
+        border-top-right-radius: $blog-component-radius;
+       }
+    }
+
+    &_2 {
+      border-top-right-radius:  $blog-component-radius;
+      margin-top: 10rem;
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        margin-top: 0;
+       }
+    }
+
+    &_image {
+
+      @media only screen and (max-width: $bp-laptop_XL) {
+        height: 50rem;
+        }
+
+       @media only screen and (max-width: $bp-laptop_L) {
+         height: 23.5rem;
+        }
+
+       @media only screen and (max-width: $bp-laptop) {
+         height: 18rem;
+        }
+
+        @media only screen and (max-width: $bp-laptop) {
+          height: 15rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile_L) {
+          height: 17rem;
+         }
+
+         @media only screen and (max-width: $bp-mobile_M) {
+          height: 15rem;
+         }
+
+         @media only screen and (max-width: $bp-mobile_S) {
+          height: 13rem;
+         }
+        
+     
+
+      & > * {
+        max-width: 100%;
+      }
+    }
+
+    &_emoji {
+
+      @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 60px;
+        }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+         font-size: 20px;
+         }
+    }
+
+    &_text {
+      padding: 0 2rem;
+    }
+
+    &_h3 {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        font-size: 3.5rem;
+        }
+
+       @media only screen and (max-width: $bp-laptop_L) {
+          font-size: 1.8rem;
+        }
+
+       @media only screen and (max-width: $bp-laptop) {
+          font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-tablet) {
+          font-size: 1.25rem;
+        }
+    }
+
+    &_author {
+
+      @media only screen and (max-width: $bp-laptop_XL) {
+        font-size: 3.5rem;
+        }
+
+       @media only screen and (max-width: $bp-laptop_L) {
+         font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-tablet) {
+          font-size: 1.25rem;
+         }
+
+      color: #fff;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+    }
+
+    &_author:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-cta {
+    padding: 1.5rem 0;
+    margin: 4rem 0;
+    text-align: center;
+
+    &_h3 {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-laptop_L) {
+          font-size: 2rem;
+          }
+    }
+  }
+}

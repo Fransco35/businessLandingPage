@@ -1,0 +1,29 @@
+:root {
+  --color-primary-one: #fff;
+}
+
+$bp-laptop_XL: 160em;
+$bp-laptop_L: 90em;
+$bp-laptop: 64em;
+$bp-tablet: 48em;
+$bp-mobile_L: 26.5625em;
+$bp-mobile_M: 23.4375em;
+$bp-mobile_S: 20em;
+
+$blog-component-radius: 40px;
+
+$primary-background-color:#2118e6;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}

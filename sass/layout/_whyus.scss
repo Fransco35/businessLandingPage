@@ -1,0 +1,77 @@
+.whyus {
+  background-color: $primary-background-color;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &-imagebox_1 {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+   
+
+    
+  }
+
+  &-image_1,&-image_2 {
+    width: 100%;
+    height: auto;
+  }
+
+  &-imagebox_2 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transform: rotate(180deg);
+    
+
+  }
+
+
+  &-content {
+    padding: 5rem 0.5rem;
+    text-align: center;
+    width: 50vw;
+
+    @media only screen and (max-width: $bp-mobile_L) {
+    width: 90vw;
+
+    }
+
+    &_h1 {
+      @media only screen and (max-width: $bp-laptop_L) {
+        font-size: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        font-size: 1.9rem;
+      }
+    }
+
+    &_h3 {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        font-size: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        font-size: 1.25rem;
+      }
+    }
+
+  }
+}

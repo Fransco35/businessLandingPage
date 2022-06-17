@@ -1,0 +1,116 @@
+.home {
+  display: flex;
+  height: 100vh;
+  padding: 2rem 8rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+
+  @media only screen and (max-width: $bp-mobile_L) {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem 5rem;
+  }
+
+  &-text {
+    width: 50%;
+
+    @media only screen and (max-width: $bp-mobile_L) {
+      width: 100%;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 3rem;
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 49%;
+
+    &_q {
+      @media only screen and (max-width: $bp-laptop_XL) {
+        height: 65rem;
+        width: 60rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop_L) {
+        height: 50rem;
+        width: 48rem;
+      }
+
+      @media only screen and (max-width: $bp-laptop) {
+        height: 45rem;
+        width: 40rem;
+      }
+
+      @media only screen and (max-width: $bp-tablet) {
+        height: 35rem;
+        width: 29rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_L) {
+        height: 16rem;
+        width: 16rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile_S) {
+        height: 14rem;
+        width: 14rem;
+      }
+    }
+  }
+
+  &-h1 {
+    @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 7.2rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop_L) {
+      font-size: 4.7rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile_L) {
+      font-size: 2.1rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile_S) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-h3 {
+    @media only screen and (max-width: $bp-laptop_XL) {
+      font-size: 3.6rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop_L) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 1.3rem;
+      margin: 0.22rem 0;
+    }
+
+    @media only screen and (max-width: $bp-mobile_S) {
+      font-size: 1rem;
+      margin: 0.25rem 0;
+    }
+  }
+
+  @media only screen and (max-width: $bp-mobile_S) {
+    justify-content: space-evenly;
+  }
+}
