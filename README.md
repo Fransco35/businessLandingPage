@@ -1,1 +1,4 @@
-# sparksLP
+#SPARKSLP
+SparksLP is a landing page that i built using html, css/scss(node-sass). It is fully responsive on all viewports in web and mobile screens.
+The idea behind the building of this project is to create a responsive landing page using vanilla css without using any css framework which i achieved upon completion of sparkLP.
+For anyone looking to read through the css code a good knowledge of SCSS is required to make it easy for you. I made comments(mostly for the media queries) to make understanding the code easy for those reading through it
